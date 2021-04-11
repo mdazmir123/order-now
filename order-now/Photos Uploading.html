@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Photos Uploading</title>
+	<!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="Create-Order.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+</head>
+<body>
+
+<div class="container-fluid container-ff">
+	<div class="row">
+
+ <div class="col-sm-2 menu">
+      <ul class="nav nav-sidebar">
+        <li><a href="#">
+          <img src="logo new.png" class="logo">
+        </a></li>
+
+        <li><a href="#"><i class='fas fa-shopping-cart'></i>Create Order</a></li>
+
+        <li><a href="#"><i class='fas fa-address-book'></i>My Profile</a></li>
+
+        <li><a href="#"><i class='fas fa-align-justify'></i>My Orders</a></li>
+
+
+        <li><a href="#"><i class='fas fa-question'></i>How it works</a></li>
+
+        <li><a href="#"><i class='fas fa-question'></i>Invoice</a></li>
+
+
+<li><a href="#"><i class='fas fa-power-off'></i>Logout</a></li>
+
+
+      </ul>
+         </div>
+
+
+
+		<div class="col-sm-10">
+
+<!-- step nav -->
+     <div class="steps">
+          <ul>
+    <li class="step_item active selected Uploading">Uploading</li>
+    <li class="step_item Instructions">Instructions</li>  
+    <li class="step_item Finish">Finish</li>                                                   
+    </ul>
+      </div>
+<!-- end step nav -->
+
+<h1 class="page-header1">Photos Uploading</h1>
+
+
+
+
+
+
+
+
+<!-- nav tab -->
+		<ul class="nav nav-pills Photos-Uploading-tab" id="pills-tab" role="tablist">
+
+  <li class="nav-item">
+    <a class="nav-link active" id="pills-home-tab" data-toggle="pill" href="#Computer" role="tab" aria-controls="pills-home" aria-selected="true">Computer</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" id="pills-profile-tab" data-toggle="pill" href="#Dropbox" role="tab" aria-controls="pills-profile" aria-selected="false">Dropbox</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#Email" role="tab" aria-controls="pills-contact" aria-selected="false">Email</a>
+  </li>
+
+  <li class="nav-item">
+    <a class="nav-link" id="pills-contact-tab" data-toggle="pill" href="#Wetransfer" role="tab" aria-controls="pills-contact" aria-selected="false">Wetransfer</a>
+  </li>
+
+</ul>
+<!-- end nav tab -->
+
+
+<!-- tab text -->
+<div class="tab-content" id="pills-tabContent">
+
+<!-- Computer -->
+  <div class="tab-pane fade show active Computer" id="Computer" role="tabpanel" aria-labelledby="pills-home-tab">
+    <div class="row">
+
+      <div class="col-sm-12  photos-NOW">
+  <label style="width: 100%;">
+    <input type="checkbox" name="providenow" id="provideNow" value="1">
+        <span class="iwillprovide">I will provide photos NOW</span>
+   </label>
+
+   <span class="btn btn-success fileinput-button addfile">
+              <i class='fas fa-plus'></i><span>Add files...</span><input type="file" name="files[]" multiple="">
+     </span>
+
+     <button type="reset" class="Cancel-upload">
+                            <i class='fas fa-ban'></i>
+                            <span>Cancel upload</span>
+                        </button>
+
+                        <button type="button" class="Delete">
+                            <i class='fas fa-trash'></i>
+                            <span>Delete</span>
+                        </button>
+
+                      <input type="checkbox" name="providenow" id="provideNow" value="1">
+                    </div>
+                  
+
+          <div class="col-sm-12">
+            <label style="width: 100%;">
+    <input type="checkbox" name="providenow" id="provideNow" value="1">
+        <span class="iwillprovide">I will provide photos LATER</span>
+   </label>
+
+   <h3>How many photos in the order<span class="asterisk">*</span>:</h3>
+   <select id="cars">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select> Photo
+          </div>
+
+
+
+  </div>
+</div>
+<!-- end Computer -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Dropbox -->
+  <div class="tab-pane fade Dropbox" id="Dropbox" role="tabpanel" aria-labelledby="pills-profile-tab">
+    <div class="row">
+      <div class="col-sm-12 Send-Photos"><h3 >Send Photos via Dropbox</h3></div>
+
+      <div class="col-sm-5">
+        <h4 class="">Share Dropbox link</h4>
+       <textarea style="width: 99% !important; height: 36px;px;" rows="1" class="form-control" id="upload_form_dropboxlink" name="upload_form_dropboxlink" placeholder="Dropbox link"></textarea>
+       <div style="font-size: 12px; text-align:left; margin-top:7px;">
+                            * The Dropbox link can be provided now in the window above or sent via email later. If
+                            you've got any questions please get in touch with us without any hesitations via online
+                            support chat or email.
+                        </div>
+      </div>
+
+
+
+
+
+
+
+
+
+
+
+      <div class="col-sm-2">
+        <h3>OR</h3>
+      </div>
+
+
+
+      <div class="col-sm-5">
+        <h4 class="active">Upload Photos to Our Dropbox</h4>
+        <button class="personal"><a href="#"><b>Get your personal link</b></a></button>
+        <div style="font-size: 12px; text-align:left; margin-top:7px;">
+                        * If you don't have a Dropbox account you always can use our Dropbox folder. Click this button
+                        to proceed.
+                    </div>
+      </div>
+ <hr style="width: 100%;">
+       <div class="col-sm-12">
+         <h4>How many photos will i provide:<span class="asterisk">*</span>:</h4>
+         <div style="text-align: center;">
+           <select id="cars">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select> Photo
+         </div>
+       </div>
+
+
+    </div>
+  </div>
+<!-- end Dropbox -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Email -->
+  <div class="tab-pane fade Email" id="Email" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <div class="row">
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+                        <h3>Send us Photos via Email: fixthephotocom@gmail.com</h3>
+                    </div>
+
+
+      <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 ">
+                    <h4>Please add the order <span style="text-decoration: underline">ID 130689</span>
+                        into the subject of your e-mail</h4>
+                </div>
+
+
+      <div class="col-sm-12">
+        <div class="info-box">
+          <h3>You can send us your images on Email via:</h3>
+          <p>Wetransfer </p>
+          <p>Dropbox </p>
+          <p>Google Drive</p>
+          <p>Email attachment</p>
+        </div>
+      </div>
+
+
+
+
+      <div class="col-sm-12">
+         <h4 style="margin-top: 15px;">How many photos will i provide:<span class="asterisk">*</span>:</h4>
+         <div>
+           <select id="cars">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select> Photo
+         </div>
+       </div>
+
+    </div>
+  </div>
+<!-- end Email -->
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- Wetransfer -->
+  <div class="tab-pane fade Wetransfer" id="Wetransfer" role="tabpanel" aria-labelledby="pills-contact-tab">
+    <div class="row">
+      <div class="col-sm-12">
+        <h3 class="text-center">Send images via Wetransfer</h3>
+      </div>
+      
+      <div class="col-sm-12">
+        <h4>You can simply send us images via our WeTransfer Channel
+         <input class="btn btn-warning" type="button" value="Upload Images"></h4>
+      </div>
+
+
+ <div class="col-sm-12">
+         <h4 style="margin-top: 15px;">How many photos will i provide:<span class="asterisk">*</span>:</h4>
+         <div>
+           <select id="cars">
+  <option value="0">0</option>
+  <option value="1">1</option>
+  <option value="2">2</option>
+  <option value="3">3</option>
+</select> Photo
+         </div>
+       </div>
+
+
+
+    </div>
+  </div>
+<!-- Wetransfer -->
+
+</div>
+<!-- end tab text -->
+
+
+
+<button class="Back">Back</button>
+
+<button class="Provide-Instructions">Continue: Provide Instructions</button>
+
+
+
+
+
+
+
+		</div>
+ <!-- end col 10 -->
+
+
+	</div>
+</div>
+
+
+
+
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+
+
+
+
+
+</body>
+</html>
